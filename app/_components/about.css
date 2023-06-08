@@ -1,0 +1,48 @@
+.about-pg{
+    background-color:  #66BB6A;
+    position: relative;
+    height: 100vh;
+    padding: 8%;
+}
+
+.about-title{
+   font-weight: 700;
+}
+
+.about{
+    font-size: 30px;
+}
+
+.technoverse{
+    font-size: 50px;
+}
+
+.about-desc{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.promo-vid{
+    width: 484px;
+    height: 285.13px;
+    background-color: #453300;
+    border-radius: 30.8218px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-content{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23.592px;
+    line-height: 101.5%;
+    letter-spacing: -0.04em;
+    width: 459px;
+    height: 205px;
+    margin-left: 3%;
+}

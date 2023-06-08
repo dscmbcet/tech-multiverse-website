@@ -1,0 +1,36 @@
+.verticals-pg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFF6B5;
+    color: black;
+    padding: 3% 8% 0;
+}
+
+.verticals-title{
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 86%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #452F0E;
+}
+
+
+.verticals-content{
+    font-size: 23px;
+    color: #333333;
+    margin: 1% 1% 5%;
+}
+
+.verticals-doors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.door1,.door2,.door3{
+    width: 189.62px;
+    height: 332.75px;
+}
+

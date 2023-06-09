@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Footer from './_components/Footer'
 import NavBar from './_components/NavBar'
 import './globals.css'
@@ -5,7 +6,7 @@ import { Poppins } from 'next/font/google'
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '900']
+  weight: ['400', '800']
 })
 
 export const metadata = {

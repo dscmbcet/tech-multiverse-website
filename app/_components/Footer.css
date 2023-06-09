@@ -1,5 +1,6 @@
 .Footer {
     padding: 7%;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -25,17 +26,16 @@
 .footer_register :nth-child(1) {
     width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+
 }
 
 .footer_register :nth-child(1) > h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-    line-height: 86%;
+    line-height: 95%;
     letter-spacing: -0.02em;
-    margin: 30px 0px;
     
     color: #FFFDD6;
     -webkit-text-stroke-width: 1px;

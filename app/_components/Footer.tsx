@@ -19,15 +19,13 @@ function Footer() {
     <div className='Footer' style={{backgroundColor: "#1A1A1A"}}>
         <div className='footer_register'>
             <div>
-                <h1>
-                register now and
-                “do cool things that matter.”
-                </h1>
+                <h1>register now and</h1>
+                <h1>“do cool things that matter.”</h1>
             </div>
             <div>
                 <div 
                 className="apply-button" 
-                data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+                data-hackathon-slug="technoverse" 
                 data-button-theme="dark"
                 style={{height: "44px", width: "312px"}}
                 />

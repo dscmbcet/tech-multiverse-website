@@ -1,4 +1,4 @@
-import './Verticals.css';
+import './Verticals.css'
 
 function Verticals() {
   return (

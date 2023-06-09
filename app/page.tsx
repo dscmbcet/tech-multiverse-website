@@ -51,6 +51,7 @@ export default function Home() {
   </section>
   <About/>
   <section className={styles.tracks}>
+      <div className={styles.overlay} />
       <h1>choose from</h1>
       <h1>two tracks</h1>
       <div>

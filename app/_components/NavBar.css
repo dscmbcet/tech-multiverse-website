@@ -1,5 +1,12 @@
 #navBar {
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    top: 0;
+}
+
+.nav_wrapper {
     display: flex;
     padding: 0 10%;
     height: 100px;
@@ -9,16 +16,16 @@
     margin-top: -10px;
 }
 
-#navBar > .logoWrapper {
+.nav_wrapper > .logoWrapper {
     flex: 1.5;
 }
 
-#navBar > .logoWrapper > img {
+.nav_wrapper > .logoWrapper > img {
     /* width: 100px; */
     width: clamp(60px, 10vw, 100px);
 }
 
-#navBar > .navLinks {
+.nav_wrapper > .navLinks {
     flex: 2;
     list-style: none;
     display: flex;
@@ -26,7 +33,7 @@
     align-items: center;
     gap: 40px;
 }
-#navBar > .navLinks li > a {
+.nav_wrapper > .navLinks li > a {
     text-decoration: none;
     color: white;
 }
@@ -75,7 +82,7 @@
     color: var(--lego-yellow) !important;
 } 
 
-#navBar > .navLinks li {
+.nav_wrapper > .navLinks li {
     cursor: pointer;
     font-weight: 400;
     font-size: 20px;
@@ -124,7 +131,7 @@
 
 @media screen and (max-width:900px) {
   
-    #navBar>.logoWrapper>img{
+    .nav_wrapper>.logoWrapper>img{
         margin-top: 30px;
         height: 50px;
         width: clamp(80px, 9vw, 300px);

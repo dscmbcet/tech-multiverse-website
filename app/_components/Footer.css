@@ -1,0 +1,102 @@
+.Footer {
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #42a5f5;
+    gap: 50px;
+    position: relative;
+}
+
+.footer_register {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #FAA701;
+    border-radius: 10px;
+    padding: 40px;
+    height: 150px;
+    width: 1000px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer_register :nth-child(1) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer_register :nth-child(1) > h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 86%;
+    letter-spacing: -0.02em;
+    margin: 30px 0px;
+    
+    color: #FFFDD6;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.Footer > .quickLinks {
+    display: flex;
+    flex-direction: column;
+}
+.Footer > .quickLinks > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.Footer > .quickLinks > p {
+    cursor: pointer;
+}
+
+.Footer > .quickLinks > p:hover, .Footer > .quickLinks > a:hover {
+    color: var(--lego-yellow);
+}
+.Footer > .findUs > .iconWrapper > a {
+    color: white;
+}
+
+.Footer > .findUs > .iconWrapper > a:hover {
+    color: var(--lego-yellow);
+}
+
+@media screen and (min-width: 900px) {
+    .Footer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .Footer > .footer_about > h3, .Footer > .quickLinks > h3, .Footer > .quickLinks > h3, .Footer > .findUs > h3 {
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: clamp(20px, 5vw, 15.5484px);
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .Footer > .footer_about {
+        max-width: 600px;
+    }
+
+    .Footer > .quickLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Footer > .findUs > .iconWrapper {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 40px 40px;
+        grid-row: auto auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+}

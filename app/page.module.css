@@ -1,4 +1,252 @@
 .landing {
-  background: linear-gradient(180deg, #64B5F6 -52.11%, #FFF8E1 92.65%);
+  position: relative;
   min-height: 100vh;
+  background: linear-gradient(180deg, #64B5F6 -52.11%, #FFF8E1 92.65%);
+  background-repeat: no-repeat;
+  z-index: -2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282828;
+}
+
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url("/overlay.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+}
+
+@media only screen and (max-width: 768px) {
+  .landing_wrapper {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+  .tree {
+    display: none;
+  }
+}
+
+.landing_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.title_wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title > p {
+  font-size: min(30px, 2.6vw);
+  line-height: min(60px, 5.2vw);
+  
+  font-weight: 400;
+}
+
+.title > p > b {
+  font-weight: 900;
+  font-size: min(90px, 5.7vw);
+}
+
+.title > h2 {
+  font-weight: 900;
+  font-size: min(26px, 3vw);
+  color: #452F0E;
+  margin-bottom: 20px;
+}
+
+.mascot_wrapper {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.mascot {
+  position: relative;
+  height: 600px;
+  margin-top: 100px;
+}
+.mascot > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:260px;
+  margin: auto;
+}
+
+.mascot > :nth-child(1) {
+  top: 320px;
+}
+
+.mascot > :nth-child(2) {
+  top: 380px;
+  width:440px;
+}
+
+.mascot > :nth-child(3) {
+  top: 480px;
+  width:180px;
+}
+
+.mascot > :nth-child(4) {
+  top: 220px;
+}
+
+.tree {
+  position: absolute;
+  right: 0;
+  height: 100vh;
+}
+
+.plant1 {
+  position: absolute;
+  width: min(12vw, 260px);
+  left: 0;
+  bottom: 40px;
+}
+
+.plant2 {
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  width: min(12vw, 260px);
+}
+
+
+.tracks {
+  position: relative;
+  background: linear-gradient(180deg, #FFFBDF 0%, #44BDAF 89.45%);
+  min-height: 120vh;
+  color: #032E36;
+  font-weight: 700;
+  font-size: 50px; 
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  align-items: center;
+  align-self: center;
+}
+
+.tracks_image {
+  scale: 80%;
+}
+
+.ship {
+  position: absolute;
+  bottom: 0;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.about {
+  position: relative;
+  min-height: max(600px, 100vh);
+  background: linear-gradient(180.05deg, #FFFBDF 1.4%, rgba(252, 197, 81, 0.921118) 52.57%, rgba(250, 167, 1, 0.876923) 99.96%);
+  display: flex;
+  align-items: center;
+}
+
+.about_content {
+  padding-left: 100px;
+  width: 50%;
+  z-index: 99;
+}
+
+.about_content :nth-child(1) {
+  font-size: max(30px, 4.6vw);
+  line-height: max(30px, 4.6vw);
+}
+
+.about_content > h1 {
+  font-size: max(40px, 5.6vw);
+  line-height: max(40px, 5.6vw);
+  color: #171717;
+}
+
+.about_content > p {
+  font-size: max(22px, 1.2vw);
+  line-height: max(22px, 1.2vw);
+  color: #3F3C28;
+}
+
+.about_content > h2 {
+  font-size: max(26px, 1.6vw);
+  line-height: max(26px, 1.6vw);
+  color: #452F0E;
+}
+
+.brain {
+  z-index: 1;
+  position: absolute;
+  width: max(400px, 40vw);
+  bottom: 0;
+  right: 0;
+}
+
+.sponsors {
+  min-height: max(600px, 100vh);  
+  background-color: #FFFBDC;
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.sponsors > .wrapper {
+  position: relative;
+  background-color: #6AB764;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.sponsors > .wrapper > .hflex {
+  padding: 10px 50px 10px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hflex > div > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 81.7316px;
+  line-height: 86%;
+  color: #FFFDD9;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.sponsorContainer {
+  gap: 40px;
+  display: flex;
+}
+
+.sponsorCategory {
+  padding: 10px 50px 50px 50px;
+}
+
+.sponsorCategory > h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 58.6508px;
+  line-height: 86%;
+  letter-spacing: -0.02em;
+  margin: 30px 0px;
+  
+  color: #FFFDD6;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }

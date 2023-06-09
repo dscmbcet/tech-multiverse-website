@@ -27,30 +27,32 @@ function NavBar() {
     }
     return (
         <div id='navBar'>
-            <div className='logoWrapper'>
-                <h1>TECH MULTIVERSE</h1>
-                {/* <img alt='ledebut logo' src={Logo} /> */}
+            <div className="nav_wrapper">
+                <div className='logoWrapper'>
+                    {/* <h1>TECH MULTIVERSE</h1> */}
+                    {/* <img alt='ledebut logo' src={Logo} /> */}
+                </div>
+                <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li onKeyDown={()=>executeScroll("speaker")} onClick={()=>executeScroll("speaker")}>Speakers</li>
+                    <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li>
+                    {/* <li className={`${activeLink === 'register'&& "activelink"}`}>
+                        <a href='/register'>Register</a>
+                    </li> */}
+                </ul>
+                <img className='hamburgerMenu' src={menuIcon} onClick={changeToggle} onKeyDown={changeToggle} alt="" />
+                <div role='none'
+                    className={toggle ? 'backgroundOverlay' : 'backgroundOverlay backgroundOverlayClosed'}
+                    onClick={() => {
+                        setToggle(false);
+                    }}
+                    onKeyDown={() => {
+                        setToggle(false);
+                    }}
+                />
             </div>
-            <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
-                <li>
-                    <a href='/'>Home</a>
-                </li>
-                <li onKeyDown={()=>executeScroll("speaker")} onClick={()=>executeScroll("speaker")}>Speakers</li>
-                <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li>
-                {/* <li className={`${activeLink === 'register'&& "activelink"}`}>
-                    <a href='/register'>Register</a>
-                </li> */}
-            </ul>
-            <img className='hamburgerMenu' src={menuIcon} onClick={changeToggle} onKeyDown={changeToggle} alt="" />
-            <div role='none'
-                className={toggle ? 'backgroundOverlay' : 'backgroundOverlay backgroundOverlayClosed'}
-                onClick={() => {
-                    setToggle(false);
-                }}
-                onKeyDown={() => {
-                    setToggle(false);
-                }}
-             />
         </div>
     )
 }

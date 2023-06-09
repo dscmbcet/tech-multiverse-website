@@ -1,0 +1,12 @@
+.sponsorItemLink {
+    background-color: #FFFDD6;
+    border: 1.93064px solid #000000;
+    border-radius: 11.5839px;
+    max-width: fit-content;
+    display: flex;
+    padding: 15px 10px;
+}
+
+.sponsorItem {
+    height: 40px;
+}

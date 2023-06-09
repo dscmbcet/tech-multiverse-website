@@ -1,5 +1,7 @@
 "use client"
+import About from './_components/About';
 import SponsorCard from './_components/SponsorCard';
+import Verticals from './_components/Verticals';
 import styles from './page.module.css'
 import { useEffect } from 'react';
 
@@ -47,6 +49,7 @@ export default function Home() {
     <img className={styles.plant1} src="/landing_plant1.svg" alt={''}/>
     <img className={styles.plant2} src="/landing_plant2.svg" alt={''}/>
   </section>
+  <About/>
   <section className={styles.tracks}>
       <h1>choose from</h1>
       <h1>two tracks</h1>
@@ -56,7 +59,7 @@ export default function Home() {
       </div>
       <img className={styles.ship} src="/deco.svg" alt="" />
   </section>
-
+  <Verticals/>
   <section className={styles.about}>
     <div className={styles.overlay} />
     <div className={styles.about_content}>

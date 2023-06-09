@@ -58,6 +58,8 @@
 .title > p > b {
   font-weight: 900;
   font-size: min(90px, 5.7vw);
+  line-height: 55%;
+  letter-spacing: -0.05em;
 }
 
 .title > h2 {
@@ -143,40 +145,54 @@
 
 .tracks_image_container {
   display: flex;
+  gap: 60px;
 }
 
-.tracks_image {
+.coin {
   z-index: 2;
   margin-top: 60px;
-  scale: 80%;
-  background-position: center;
-  background-repeat: no-repeat;
   width: 300px;
   height: 300px;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
-.tracks_image:nth-of-type(1) {
+.coin__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.coin1__face__front {
   background: url("/coin 2.svg");
-  background-size: cover;
-  transition: background 0.2s ease-in-out;
+  background-position: center;
+  background-size: contain;
 }
 
-.tracks_image:nth-of-type(1):hover {
+.coin1__face__back {
   background: url("/coin 3.svg");
-  background-size: cover;
-  cursor: pointer;
-
+  background-position: center;
+  background-size: contain;
+  transform: rotateY( 180deg );
 }
 
-.tracks_image:nth-of-type(2) {
+.coin2__face__front {
   background: url("/coin 4.svg");
-  background-size: cover;
-  transition: background 0.2s ease-in-out;
+  background-position: center;
+  background-size: contain;
 }
 
-.tracks_image:nth-of-type(2):hover {
+.coin2__face__back {
   background: url("/coin 5.svg");
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  transform: rotateY( 180deg );
+}
+
+.coin:hover {
+  transform: rotateY(180deg);
   cursor: pointer;
 }
 
@@ -230,12 +246,35 @@
   margin-top: 30px;
 }
 
-.brain {
+.brainIllustration {
   z-index: 1;
   position: absolute;
-  width: max(400px, 40vw);
-  bottom: 0;
-  right: 0;
+  bottom: -145px;
+  right: -165px;
+}
+
+.brain {
+  scale: 60%;
+}
+
+.bulb {
+  position: absolute;
+  scale: 80%;
+  top: 60px;
+  left: 390px;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 80%;
+   }
+   50% {
+    scale: 100%;
+   }
+   100% {
+    scale: 80%;
+   }
 }
 
 .sponsors {

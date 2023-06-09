@@ -1,12 +1,47 @@
 "use client"
+import { gsap } from 'gsap';
 import About from './_components/About';
 import SponsorCard from './_components/SponsorCard';
 import Verticals from './_components/Verticals';
 import styles from './page.module.css'
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 export default function Home() {
+  let ctx = gsap.context(() => { });
+  const mascotRef = useRef(null);
+  const mascotBaseRef = useRef(null);
+  const plant1Ref = useRef(null);
+  const plant2Ref = useRef(null);
+
+  const mascotParentRef = useRef(null);
+  var mascottl = gsap.timeline({paused: true})
+  gsap.registerPlugin(ScrollTrigger);
+
   const [width, setWindowWidth] = useState(1024)
+
+  useLayoutEffect(() => {
+    ctx.add(() => {
+      ScrollTrigger.create({
+        trigger: mascotRef.current,
+        start: "top bottom",
+        onEnter: ()=> mascottl.play(),
+        onLeave: ()=> mascottl.pause(),
+        onEnterBack: ()=> mascottl.play(),
+        onLeaveBack: ()=> mascottl.pause(),
+      })
+      mascottl.to(mascotRef.current, { rotation: 4, y: -20,  duration: 1 });
+      mascottl.to(mascotBaseRef.current, { y: -100, duration: 1 }, "-=1");
+      mascottl.to(plant1Ref.current, { rotation: 3, duration: 1 }, "-=1");
+      mascottl.to(plant2Ref.current, { rotation: 3, duration: 1 }, "-=1");
+      mascottl.to(plant1Ref.current, {rotation: -3, yoyoEase: true, duration: 2, repeat: -1, yoyo: true });
+      mascottl.to(plant2Ref.current, {rotation: -3, yoyoEase: true, duration: 2, repeat: -1, yoyo: true }, "-=2");
+      mascottl.to(mascotRef.current, { rotation: -4, y: 20, yoyoEase: true, duration: 2, repeat: -1, yoyo: true }, "-=2");
+      mascottl.to(mascotBaseRef.current, { y: -50, yoyoEase: true, duration: 2, repeat: -1, yoyo: true }, "-=2");
+    }, mascotParentRef);
+    return () => ctx.revert();
+  }, []);
+  
   useEffect(() => { 
     updateDimensions();
     window.addEventListener('resize', updateDimensions);
@@ -24,8 +59,12 @@ export default function Home() {
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
+    console.log(document.body);
+    
     return () => {
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     }
 }, []);
   return (
@@ -50,19 +89,19 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.mascot_wrapper}>
-            <div className={styles.mascot}>
+            <div className={styles.mascot} ref={mascotParentRef}>
               <img src="/landing_sun.svg" alt="" />
               <img src="/landing_cloud.svg" alt="" />
-              <img src="/landing_base.svg" alt="" />
-              <img src="/landing_mascot.svg" alt="" />
+              <img src="/landing_base.svg" ref={mascotBaseRef} alt="" />
+              <img src="/landing_mascot.svg" ref={mascotRef} alt="" />
             </div>
           </div>
         </div>
 
 
     <img className={styles.tree} src="/landing_tree.svg" alt={''}/>
-    <img className={styles.plant1} src="/landing_plant1.svg" alt={''}/>
-    <img className={styles.plant2} src="/landing_plant2.svg" alt={''}/>
+    <img className={styles.plant1} ref={plant1Ref} src="/landing_plant1.svg" alt={''}/>
+    <img className={styles.plant2} ref={plant2Ref} src="/landing_plant2.svg" alt={''}/>
   </section>
   <About/>
   <section className={styles.tracks}>
@@ -70,8 +109,16 @@ export default function Home() {
       <h1>choose from</h1>
       <h1>two tracks</h1>
       <div className={styles.tracks_image_container}>
-        <div className={styles.tracks_image} />
-        <div className={styles.tracks_image} />
+      <div className={styles.coin}>
+          <div className={`${styles.coin__face} ${styles.coin1__face__front}`} />
+          <div className={`${styles.coin__face} ${styles.coin1__face__back}`} />
+      </div>
+
+      <div className={styles.coin}>
+          <div className={`${styles.coin__face} ${styles.coin2__face__front}`}/>
+          <div className={`${styles.coin__face} ${styles.coin2__face__back}`}/>
+      </div>
+
       </div>
       <img className={styles.ship} src="/deco.svg" alt="" />
   </section>
@@ -86,7 +133,11 @@ export default function Home() {
       <p>Unleash your untapped potential and join the extraordinary gathering of visionary young minds. Step into the spotlight, unleash your creativity, and leave your mark as you embark on an exhilarating journey to revolutionize the world through technology.</p>
     <h2 className={styles.about_announce}>hackathon tracks will be announced soon !</h2>      
     </div>
-    <img className={styles.brain} src="/brain.svg" alt="" />
+    <div className={styles.brainIllustration}>
+      <img className={styles.brain} src="/brain.svg" alt="" />
+      <img className={styles.bulb} src="/bulb.svg" alt="" />
+    </div>
+
   </section>
 
   <section className={styles.sponsors}>

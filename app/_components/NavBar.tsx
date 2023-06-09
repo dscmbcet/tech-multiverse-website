@@ -30,7 +30,8 @@ function NavBar() {
             <div className="nav_wrapper">
                 <div className='logoWrapper'>
                     {/* <h1>TECH MULTIVERSE</h1> */}
-                    {/* <img alt='ledebut logo' src={Logo} /> */}
+                    
+                    <img alt='technoverse logo' src={"/logo.svg"} />
                 </div>
                 <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
                     <li>

@@ -21,8 +21,8 @@ function Verticals() {
     setImageSrc3('/door6.png');
   };
   return (
-    <div className='verticals-pg'> 
-       
+    <div className='verticals-bg'> 
+       <div className='verticals-pg'>
         <h1 className='verticals-title'>bootcamp <br/>verticals</h1>
         
         <div className='verticals-content'>click the doors to find out !</div>
@@ -30,6 +30,7 @@ function Verticals() {
             <img src={imageSrc1} className='door1' onClick={handleClick1}/>
             <img src={imageSrc2} className='door2' onClick={handleClick2}/>
             <img src={imageSrc3} className='door3' onClick={handleClick3}/>
+        </div>
         </div>
     </div>
   )

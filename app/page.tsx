@@ -142,6 +142,7 @@ export default function Home() {
   <section className={styles.sponsors}>
     <div className={styles.wrapper}>
       <div className={styles.overlay} />
+      <div className={styles.bg} />
       <div className={styles.hflex}>
         <div>
           <h1>meet our</h1>

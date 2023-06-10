@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import react from 'react';
 import './Verticals.css'
+import gsap from 'gsap';
 
 function Verticals() {
-  const [imageSrc1, setImageSrc1] = useState('/door1.png');
-  const [imageSrc2, setImageSrc2] = useState('/door2.png');
-  const [imageSrc3, setImageSrc3] = useState('/door3.png');
-
+  const [imageSrc1, setImageSrc1] = react.useState('/door1.png');
+  const [imageSrc2, setImageSrc2] = react.useState('/door2.png');
+  const [imageSrc3, setImageSrc3] = react.useState('/door3.png');
   const handleClick1 = () => {
     // Update the image source to the new image
     setImageSrc1('/door4.png');
@@ -23,6 +23,7 @@ function Verticals() {
   return (
     <div className='verticals-bg'> 
        <div className='verticals-pg'>
+       <div className="verticals-overlay" />
         <h1 className='verticals-title'>bootcamp <br/>verticals</h1>
         
         <div className='verticals-content'>click the doors to find out !</div>

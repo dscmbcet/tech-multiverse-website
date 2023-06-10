@@ -59,7 +59,6 @@ export default function Home() {
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
-    console.log(document.body);
     
     return () => {
       if (document.body.contains(script)) {
@@ -70,7 +69,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       {(width < 1024) && <div className={styles.mobileError}>
-          <h1>THIS WEBSITE IS ONLY OPTIMISED ON DESKTOPS</h1>
+          <h1>THIS WEBSITE IS OPTIMIZED ONLY ON DESKTOPS</h1>
       </div>}
     <section className={styles.landing}>
        <div className={styles.overlay} />
@@ -97,7 +96,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
 
     <img className={styles.tree} src="/landing_tree.svg" alt={''}/>
     <img className={styles.plant1} ref={plant1Ref} src="/landing_plant1.svg" alt={''}/>
@@ -131,7 +129,7 @@ export default function Home() {
       <h2>24th - 25th June‘23</h2>
 
       <p>Unleash your untapped potential and join the extraordinary gathering of visionary young minds. Step into the spotlight, unleash your creativity, and leave your mark as you embark on an exhilarating journey to revolutionize the world through technology.</p>
-    <h2 className={styles.about_announce}>hackathon tracks will be announced soon !</h2>      
+    <h2 className={styles.about_announce}>hackathon tracks will be <br/> announced soon !</h2>      
     </div>
     <div className={styles.brainIllustration}>
       <img className={styles.brain} src="/brain.svg" alt="" />

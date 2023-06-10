@@ -2,11 +2,12 @@
 
 .landing {
   position: relative;
-  min-height: 100vh;
+  min-height: max(1000px, 100vh);
   background: linear-gradient(180deg, #64B5F6 -52.11%, #FFF8E1 92.65%);
   background-repeat: no-repeat;
   z-index: -2;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,110 +15,109 @@
 }
 
 
-
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
   pointer-events: none;
   background: url("/overlay.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   mix-blend-mode: soft-light;
+  pointer-events: none;
   opacity: 0.25;
 }
 
-@media only screen and (max-width: 768px) {
-  .landing_wrapper {
-    padding-top: 100px;
-    flex-direction: column;
-  }
-  .tree {
-    display: none;
-  }
-}
-
 .landing_wrapper {
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
+  margin-left: 200px;
+  margin-bottom: 200px;
 }
 
 .title_wrapper {
-  width: 40%;
   display: flex;
-  justify-content: flex-end;
+  width: max-content;
 }
 
 .title > p {
-  font-size: min(30px, 2.6vw);
-  line-height: min(60px, 5.2vw);
-  
+  font-style: normal;
   font-weight: 400;
+  font-size: 33.592px;
+  line-height: 101.5%;  
+  letter-spacing: -0.04em;
 }
 
 .title > p > b {
-  font-weight: 900;
-  font-size: min(90px, 5.7vw);
-  line-height: 55%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 105.888px;
+  line-height: 76.5%;
   letter-spacing: -0.05em;
 }
 
 .title > h2 {
-  font-weight: 900;
-  font-size: min(26px, 3vw);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33.59px;
+  line-height: 101.5%;
+  
+  letter-spacing: -0.02em;
   color: #452F0E;
   margin-bottom: 20px;
 }
 
 .mascot_wrapper {
-  width: 60%;
-  display: flex;
-  justify-content: center;
+  padding-top: 200px;
+  width: 100%;
 }
 
 .mascot {
   position: relative;
   height: 600px;
-  margin-top: 100px;
+  padding-bottom: 100px;
 }
 .mascot > img {
   position: absolute;
+  left: 30%;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  width:260px;
-  margin: auto;
 }
 
 .mascot > :nth-child(1) {
-  top: 320px;
+  top: 60%;
+  width: max(20vw, 240px);
 }
 
 .mascot > :nth-child(2) {
-  top: 380px;
-  width:440px;
+  top: 80%;
+  /* width: minmax(540px, 55vw); */
+  width: max(30vw, 340px);
 }
 
 .mascot > :nth-child(3) {
-  top: 480px;
-  width:180px;
+  top: 100%;
+  width: max(15vw, 180px);
 }
 
 .mascot > :nth-child(4) {
-  top: 220px;
+  top: 55%;
+  width: max(20vw, 240px);
 }
 
 .tree {
   position: absolute;
   right: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .plant1 {
   position: absolute;
-  width: min(12vw, 260px);
+  width: min(15vw, 400px);
   left: 0;
   bottom: 40px;
 }
@@ -126,7 +126,7 @@
   position: absolute;
   right: 0;
   bottom: 40px;
-  width: min(12vw, 260px);
+  width: min(15vw, 400px);
 }
 
 
@@ -138,11 +138,12 @@
   font-weight: 700;
   font-size: 50px; 
   line-height: 110%;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
   align-items: center;
   align-self: center;
+  z-index: -1;
 }
 
 .tracks_image_container {
@@ -251,18 +252,19 @@
 .brainIllustration {
   z-index: 1;
   position: absolute;
-  bottom: -145px;
-  right: -165px;
+  bottom: -88px;
+  right: -100px;
+  scale: 80%;
 }
 
 .brain {
-  scale: 60%;
+  scale: 100%;
 }
 
 .bulb {
   position: absolute;
   scale: 80%;
-  top: 60px;
+  top: -30px;
   left: 390px;
   animation: pulse 5s infinite;
 }
@@ -296,7 +298,7 @@
 }
 
 .sponsors > .wrapper > .hflex {
-  padding: 10px 10px 10px 100px;
+  padding: 80px 100px 20px 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -304,7 +306,8 @@
 }
 
 .treasurechest {
-  scale: 80%;
+  width: 100px;
+  scale: 250%;
 }
 
 .hflex > div > h1 {
@@ -323,7 +326,7 @@
 }
 
 .sponsorCategory {
-  padding: 10px 50px 50px 100px;
+  padding: 0px 50px 50px 100px;
 }
 
 .sponsorCategory > h2 {
@@ -335,7 +338,7 @@
   margin: 30px 0px;
   
   color: #FFFDD6;
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
 

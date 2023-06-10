@@ -1,81 +1,148 @@
-.about-bg{
-    background-color: #FFFAE0;
-    margin: -6% 0;
-    padding: 6% 0;
+.about-bg {
+  background-color: #fffae0;
+  margin: -6% 0;
 }
 
-.about-pg{
-    background-color:  #66BB6A;
-    position: relative;
-    height: 100vh;
-    padding: 8%;
-    margin: 5%;
-    border-radius: 25.7249px;
+.about-pg {
+  background-color: #66bb6a;
+  position: relative;
+  margin: 5%;
+  border-radius: 25.7249px;
 }
 
-.about-title{
-   font-weight: 700;
-   color: #FFFDD9;
-   -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    line-height: 3rem;
+.about-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: url("/overlay.png");
+  cursor: pointer;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: soft-light;
+  opacity: 0.25;
+  border-radius: 25.7249px;
 }
 
-.about{
-    font-size: 60px;
-    text-decoration-color: black;
+.about-pg-wrapper {
+  padding: 8%;
 }
 
-.about-content p{
-    font-style: normal;
-font-weight: 600;
-font-size: 25.6985px;
-
+.about-title {
+  font-weight: 700;
+  color: #fffdd9;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  line-height: 3rem;
 }
 
-.technoverse{
-    font-size: 80px;
-    
+.about {
+  font-size: 60px;
+  text-decoration-color: black;
 }
 
-.about-desc{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    margin-top: 4%;
+.about-content p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25.6985px;
 }
 
-.promo-vid{
-    width: 484px;
-    height: 255.13px;
-    background-color: #453300;
-    border-radius: 30.8218px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5%;
+.about-content b {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.6985px;
+  line-height: 101.5%;
+  /* or 36px */
+
+  letter-spacing: -0.04em;
+
+  color: #3f3c28;
 }
 
-.about-content{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 23.592px;
-    line-height: 101.5%;
-    letter-spacing: -0.04em;
-    width: 459px;
-    margin-bottom: 5%;
-   
+.technoverse {
+  font-size: 80px;
 }
 
-.about-content-inner{
-    width: 477px;
-height: 225px;
-    font-style: normal;
-font-weight: 400;
-font-size: 22.0056px;
-line-height: 101.5%;
-/* or 32px */
+.about-desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4%;
+}
 
-letter-spacing: -0.04em;
+.about-desc > .player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 300px;
+  -moz-border-radius: 10px;
+  position: relative;
+  margin-right: 0%;
+}
+
+.about-desc > .player > #wrap {
+  width: calc(30vw + 20px);
+  height: 380px;
+  border-radius: 20px;
+  -moz-border-radius: 10px;
+  background: #453300;
+  position: relative;
+}
+
+.about-desc > .player > #wrap > iframe {
+  position: absolute;
+  border: #453300;
+  top: 10px;
+  left: 10px;
+  width: 30vw;
+  height: 360px;
+}
+
+.promo-vid {
+  width: 484px;
+  height: 255.13px;
+  background-color: #453300;
+  border-radius: 30.8218px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.about-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.592px;
+  line-height: 101.5%;
+  letter-spacing: -0.04em;
+  width: 459px;
+  margin-bottom: 5%;
+}
+
+.about-content-inner {
+  width: 95%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: max(28.0056px, 2vw);
+  line-height: 101.5%;
+  /* or 32px */
+
+  letter-spacing: -0.04em;
+}
+
+.about-content-inner b {
+  font-style: normal;
+  font-weight: 500;
+  font-size: max(28.0056px, 2vw);
+  line-height: 101.5%;
+  /* or 36px */
+
+  letter-spacing: -0.04em;
+
+  color: #3f3c28;
 }

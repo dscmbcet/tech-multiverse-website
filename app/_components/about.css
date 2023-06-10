@@ -37,6 +37,10 @@ font-size: 25.6985px;
     
 }
 
+.bold{
+    font-weight: 600;
+}
+
 .about-desc{
     display: flex;
     flex-direction:row;

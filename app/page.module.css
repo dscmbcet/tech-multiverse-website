@@ -286,8 +286,8 @@
 .sponsors {
   display: flex;
   align-items: center;
-  padding-bottom: 200px;
   padding: 4%;
+  padding-bottom: 200px;
   background-color: #FFFBDC;
 }
 

@@ -103,22 +103,23 @@ export default function Home() {
   </section>
   <About/>
   <section className={styles.tracks}>
+      <div className={styles.bg} />
       <div className={styles.overlay} />
-      <h1>choose from</h1>
-      <h1>two tracks</h1>
-      <div className={styles.tracks_image_container}>
-      <div className={styles.coin}>
-          <div className={`${styles.coin__face} ${styles.coin1__face__front}`} />
-          <div className={`${styles.coin__face} ${styles.coin1__face__back}`} />
-      </div>
+        <h1>choose from</h1>
+        <h1>two tracks</h1>
+        <div className={styles.tracks_image_container}>
+        <div className={styles.coin}>
+            <div className={`${styles.coin__face} ${styles.coin1__face__front}`} />
+            <div className={`${styles.coin__face} ${styles.coin1__face__back}`} />
+        </div>
 
-      <div className={styles.coin}>
-          <div className={`${styles.coin__face} ${styles.coin2__face__front}`}/>
-          <div className={`${styles.coin__face} ${styles.coin2__face__back}`}/>
-      </div>
+        <div className={styles.coin}>
+            <div className={`${styles.coin__face} ${styles.coin2__face__front}`}/>
+            <div className={`${styles.coin__face} ${styles.coin2__face__back}`}/>
+        </div>
 
-      </div>
-      <img className={styles.ship} src="/deco.svg" alt="" />
+        </div>
+        <img className={styles.ship} src="/deco.svg" alt="" />
   </section>
   <Verticals/>
   <section className={styles.about}>

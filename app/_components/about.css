@@ -46,6 +46,7 @@ font-size: 25.6985px;
     flex-direction:row;
     align-items: center;
     margin-top: 4%;
+    justify-content: space-around;
 }
 
 .promo-vid{
@@ -57,7 +58,7 @@ font-size: 25.6985px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
+   
 }
 
 .about-content{

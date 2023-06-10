@@ -3,6 +3,7 @@ import './about.css';
 
 function About() {
   return (
+    <div className='about-bg'>
     <div className='about-pg'>
         <div className='about-title'>
        <b className='about'>about</b>
@@ -10,9 +11,18 @@ function About() {
        <b className='technoverse'>TechnoVerse</b>
        </div>
        <div className='about-desc'>
-       <p className='promo-vid'>promo here</p>
-       <p className='about-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin iaculis scelerisque. Donec libero ipsum, commodo in gravida eu, volutpat et orci. Mauris orci nibh, fringilla vitae pellentesque non, varius eu urna.</p>
+        <div>
+       <p className='about-content'>
+       
+        <p>Three tracks. <br/>
+        Three bootcamps. <br/>
+        And one hackathon. </p>
+       </p>
+       <div className='about-content-inner'><b>GDSC MBCET</b> presents <b>TechnoVerse</b> where Web, ML and Blockchain all come together to make the ultimate collaborative experience. Spanning over 5 days & culminating in a 2 day hackathon, participants in each track can come together and <b>create cool stuff that matters</b>! </div>
        </div>
+       <p className='promo-vid'>promo here</p>
+       </div>
+    </div>
     </div>
   )
 }

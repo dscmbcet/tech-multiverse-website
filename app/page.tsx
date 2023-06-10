@@ -152,14 +152,14 @@ export default function Home() {
       <div className={styles.sponsorCategory}>
         <h2>platinum</h2>
         <div className={styles.sponsorContainer}>
-          <SponsorCard imagePath='/devfolio.svg' URL='https://devfolio.co/discover' height='40px'/>
-          <SponsorCard imagePath='/polygon.svg' URL='https://polygon.technology/' height='40px'/>
+          <SponsorCard imagePath='/devfolio.svg' URL='https://devfolio.co/' alt='DEVFOLIO LOGO'/>
+          <SponsorCard imagePath='/polygon.svg' URL='https://polygon.technology/' alt='POLYGON LOGO'/>
         </div>
         <h2>gold</h2>
         <div className={styles.sponsorContainer}>
-          <SponsorCard imagePath='/solana.svg' URL='https://solana.com/' height='30px'/>
-          <SponsorCard imagePath='/filecoin.svg' URL='https://filecoin.io/' height='30px'/>
-          <SponsorCard imagePath='/replit.svg' URL='https://replit.com/' height='30px'/>
+          <SponsorCard imagePath='/solana.svg' URL='https://solana.com/' alt='SOLANA LOGO'/>
+          <SponsorCard imagePath='/filecoin.svg' URL='https://filecoin.io/' alt='FILECOIN LOGO'/>
+          <SponsorCard imagePath='/replit.svg' URL='https://replit.com/' alt='REPLIT LOGO'/>
         </div>
       </div>
     </div>

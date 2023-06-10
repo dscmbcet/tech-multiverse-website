@@ -1,18 +1,18 @@
 interface SponsorItem {
     imagePath: string;
     URL: string;
-    height: string;
+    alt: string;
 }
 
 import styles from "./SponsorCard.module.css";
 
-function SponsorCard({ imagePath, URL, height }: SponsorItem) {
+function SponsorCard({ imagePath, URL, alt }: SponsorItem) {
     return (
         <a href={URL} target="blank" className={styles.sponsorItemLink}>
             <img
                 className={styles.sponsorItem}
                 src={imagePath}
-                alt={imagePath}
+                alt={alt}
             />
         </a>
     );

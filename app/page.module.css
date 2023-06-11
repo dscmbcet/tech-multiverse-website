@@ -50,7 +50,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 5vw;
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(1.2rem, 5vw, 2rem);
   line-height: 101.5%;  
   letter-spacing: -0.04em;
 }
@@ -58,7 +58,7 @@
 .title > p > b {
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(4.5rem, 15vw, 7rem);
+  font-size: clamp(3.5rem, 15vw, 7rem);
   /* font-size: 100.888px; */
   line-height: 85.5%;
   letter-spacing: -0.05em;
@@ -67,7 +67,7 @@
 .title > h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 3.5rem);
   line-height: 101.5%;
   
   letter-spacing: -0.02em;
@@ -140,7 +140,7 @@
 @media only screen and (max-width: 1024px) {
   .landing_wrapper {
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     padding-top: 300px;
   }
 
@@ -200,7 +200,7 @@
   min-height: 100vh;
   color: #032E36;
   font-weight: 700;
-  font-size: clamp(2.5rem, 5vw, 3.5rem); 
+  font-size: clamp(1.5rem, 5vw, 3.5rem); 
   line-height: 110%;
   padding-top: 100px;
   display: flex;
@@ -285,6 +285,8 @@
 
   .coin {
     margin-top: 40px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -370,9 +372,15 @@
   }
 
   .about_content > h1 {
-    font-size: 3rem;
+    font-size: rem;
     line-height: 95%;
     color: #171717;
+  }
+
+  .about_content > h2 {
+    font-size: 1.2rem;
+    line-height: 90%;
+    color: #452F0E;
   }
 }
 
@@ -444,6 +452,10 @@
   .sponsorContainer {
     flex-direction: column;
   }
+
+  .hflex > div > h1 {
+    -webkit-text-stroke-width: 1px;
+  } 
 }
 
 .mobileError {

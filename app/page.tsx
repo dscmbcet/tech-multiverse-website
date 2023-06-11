@@ -183,7 +183,7 @@ export default function Home() {
 
           <p>
           Presenting to you all, our <b>24 hour hackathon</b> being conducted as part of TechnoVerse.
-Whether you're a seasoned hacker or a newcomer, this hackathon is designed to <b>ignite your passion for technology</b> and empower you to create solutions that can make a real impact.
+Whether you&lsquo;re a seasoned hacker or a newcomer, this hackathon is designed to <b>ignite your passion for technology</b> and empower you to create solutions that can make a real impact.
           </p>
           <p>
           Team Size : <b>min. 2 - max. 5</b> members per team

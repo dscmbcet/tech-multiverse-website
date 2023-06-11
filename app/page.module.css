@@ -211,10 +211,6 @@
   align-self: center;
 }
 
-.tracks > .overlay {
-  z-index: 1;
-}
-
 .tracks_image_container {
   display: flex;
   gap: 60px;

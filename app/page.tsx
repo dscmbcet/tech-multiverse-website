@@ -145,7 +145,9 @@ export default function Home() {
       <About />
       <section className={styles.tracks}>
         <div className={styles.bg} />
-        <div className={styles.overlay} />
+        <div className={styles.overlay}>
+            <div className={styles.imageoverlay}/>
+        </div>
         <h1>choose from</h1>
         <h1>two tracks</h1>
         <div className={styles.tracks_image_container}>
@@ -171,7 +173,9 @@ export default function Home() {
       </section>
       <Verticals />
       <section className={styles.about}>
-        <div className={styles.overlay} />
+      <div className={styles.overlay}>
+            <div className={styles.imageoverlay}/>
+          </div>
         <div className={styles.about_content}>
           <h1>TechnoVerse</h1>
           <h1>hackathon</h1>

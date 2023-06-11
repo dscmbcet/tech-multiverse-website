@@ -178,10 +178,11 @@ export default function Home() {
           <h2>24th - 25th June‘23</h2>
 
           <p>
-            Unleash your untapped potential and join the extraordinary gathering
-            of visionary young minds. Step into the spotlight, unleash your
-            creativity, and leave your mark as you embark on an exhilarating
-            journey to revolutionize the world through technology.
+          Presenting to you all, our <b>24 hour hackathon</b> being conducted as part of TechnoVerse.
+Whether you're a seasoned hacker or a newcomer, this hackathon is designed to <b>ignite your passion for technology</b> and empower you to create solutions that can make a real impact.
+          </p>
+          <p>
+          Team Size : <b>min. 2 - max. 5</b> members per team
           </p>
           <h2 className={styles.about_announce}>
             hackathon tracks will be <br /> announced soon !

@@ -9,7 +9,7 @@ const poppins = Poppins({
 })
 
 export const metadata = {
-  title: 'Technoverse',
+  title: 'TechnoVerse',
   description: 'Unleash your untapped potential and join the extraordinary gathering of visionary young minds.',
 }
 

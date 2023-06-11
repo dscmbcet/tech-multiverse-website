@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 0 5%;
 }
 
 .title_wrapper {
@@ -138,10 +138,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .landing {
+    height: 100%;
+  }
   .landing_wrapper {
     flex-direction: column;
     height: 100%;
-    padding-top: 300px;
+    padding-top: 100px;
   }
 
   .title {

@@ -22,7 +22,7 @@ function About() {
               <div className="about-content-inner">
                 <b>GDSC MBCET</b> presents <b>TechnoVerse</b> where Web, ML and
                 Blockchain all come together to make the ultimate collaborative
-                experience. Bootcamp spanning over 5 days & culminating in a <br/>24 hour
+                experience. Bootcamp spanning over 5 days & culminating in a 24 hour
                 hackathon, participants in each track can come together and{" "}
                 <b>create cool stuff that matters</b>!{" "}
               </div>

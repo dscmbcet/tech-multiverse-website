@@ -38,30 +38,29 @@
 }
 
 .about {
-  font-size: 60px;
+  font-size: clamp(2rem, 9vw, 5rem);
+  line-height: 50%;
   text-decoration-color: black;
 }
 
 .about-content p {
   font-style: normal;
   font-weight: 500;
-  font-size: 25.6985px;
+  font-size: clamp(1rem, 5vw, 2rem);
 }
 
 .about-content b {
   font-style: normal;
   font-weight: 500;
-  font-size: 35.6985px;
+  font-size: clamp(1rem, 5vw, 2rem);
   line-height: 101.5%;
-  /* or 36px */
-
   letter-spacing: -0.04em;
-
   color: #3f3c28;
 }
 
 .technoverse {
-  font-size: 80px;
+  font-size: clamp(2rem, 9vw, 5rem);
+  line-height: 50%;
 }
 
 .about-desc {
@@ -76,14 +75,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  height: 300px;
-  -moz-border-radius: 10px;
+  height: 100%;
+  width: 100%;
   position: relative;
-  margin-right: 0%;
 }
 
 .about-desc > .player > #wrap {
+  min-width: 320px;
   width: calc(30vw + 20px);
   height: 380px;
   border-radius: 20px;
@@ -97,6 +95,7 @@
   border: #453300;
   top: 10px;
   left: 10px;
+  min-width: 300px;
   width: 30vw;
   height: 360px;
 }
@@ -116,18 +115,15 @@
 .about-content {
   font-style: normal;
   font-weight: 500;
-  font-size: 23.592px;
   line-height: 101.5%;
   letter-spacing: -0.04em;
-  width: 459px;
   margin-bottom: 5%;
 }
 
 .about-content-inner {
-  width: 95%;
   font-style: normal;
   font-weight: 400;
-  font-size: max(28.0056px, 2vw);
+  font-size: clamp(1rem, 5vw, 2rem);
   line-height: 101.5%;
   letter-spacing: -0.04em;
 }
@@ -135,9 +131,15 @@
 .about-content-inner b {
   font-style: normal;
   font-weight: 500;
-  font-size: max(28.0056px, 2vw);
   line-height: 101.5%;
+  font-size: clamp(1rem, 5vw, 2rem);
   letter-spacing: -0.04em;
-
   color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-desc {
+    flex-direction: column;
+    gap: 50px;
+  }
 }

@@ -29,14 +29,12 @@ function About() {
             </div>
             <div className="player">
               <div id="wrap">
-                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/wCmt2Oa9Olk" title="promo" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/> */}
                 <iframe
                   src="https://drive.google.com/file/d/1dEACB1Tv17PGOMIKuC4EwfGioX2nSeIf/preview"
                   width="560"
                   height="315"
                   allow="autoplay"
                 ></iframe>
-                {/* <iframe title="promo" src="https://drive.google.com/file/d/1f8jPcM92jHkDUjmy0Ta0GpkikBcFKki3/preview" width="440" height="280" allow="autoplay" /> */}
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from 'react'
 import './Footer.css'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { AiFillInstagram, AiFillMail, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
+import Link from 'next/link';
 
 function Footer() {
     useEffect(() => {
@@ -40,10 +41,10 @@ function Footer() {
         </div>
         <div className='quickLinks'>
             <h3>Quick Links</h3>
-            <a href="/">Home</a>
-            <p>Speakers</p>
+            <Link href="/">Home</Link>
+            <Link href="#speakers">Speakers</Link>
             {/* <a href="/register">Register</a> */}
-            <a href="/">Website</a>
+            <Link href="/">Website</Link>
         </div>
         <div className='findUs'>
             <h3>Find Us</h3>

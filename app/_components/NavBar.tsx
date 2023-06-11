@@ -1,10 +1,8 @@
 "use client"
-import React, { useContext, useEffect, useState } from 'react'
-// eslint-disable-next-line import/no-extraneous-dependencies
+import React, { useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation';
-// import Logo from '../../assets/images/ledebutlogo.png'
 import './NavBar.css'
-import menuIcon from './menu.svg';
+import Link from 'next/link';
 
 function NavBar() {
     const router = useRouter();
@@ -35,15 +33,21 @@ function NavBar() {
                 </div>
                 <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
                     <li>
-                        <a href='/'>Home</a>
+                        <Link className='link' href='/' scroll={false}>Home</Link>
                     </li>
-                    <li onKeyDown={()=>executeScroll("speaker")} onClick={()=>executeScroll("speaker")}>Speakers</li>
-                    <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li>
+                    <li>
+                        <Link className='link' href='#sponsors' scroll={false}>Sponsors</Link>
+                    </li>
+                    <li>
+                        <Link className='link' href='#register' scroll={false}>Register</Link>
+                    </li>
+                    {/* <li onKeyDown={()=>executeScroll("register")} onClick={()=>executeScroll("register")}>Register</li>
+                    <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li> */}
                     {/* <li className={`${activeLink === 'register'&& "activelink"}`}>
                         <a href='/register'>Register</a>
                     </li> */}
                 </ul>
-                <img className='hamburgerMenu' src={menuIcon} onClick={changeToggle} onKeyDown={changeToggle} alt="" />
+                <img className='hamburgerMenu' src="/menu.svg" onClick={changeToggle} onKeyDown={changeToggle} alt="" />
                 <div role='none'
                     className={toggle ? 'backgroundOverlay' : 'backgroundOverlay backgroundOverlayClosed'}
                     onClick={() => {

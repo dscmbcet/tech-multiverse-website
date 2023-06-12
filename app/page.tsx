@@ -103,7 +103,7 @@ export default function Home() {
           <div className={styles.title_wrapper}>
             <div className={styles.title}>
               <p>
-                <b>tech </b>awaits your arival!
+                <b>tech </b>awaits your arrival!
               </p>
               <p>
                 <b>multiverse</b>

@@ -103,7 +103,7 @@ export default function Home() {
           <div className={styles.title_wrapper}>
             <div className={styles.title}>
               <p>
-                <b>tech </b>awaits your arival!
+                <b>tech </b>awaits your arrival!
               </p>
               <p>
                 <b>multiverse</b>
@@ -186,7 +186,7 @@ export default function Home() {
 Whether you&lsquo;re a seasoned hacker or a newcomer, this hackathon is designed to <b>ignite your passion for technology</b> and empower you to create solutions that can make a real impact.
           </p>
           <p>
-          Team Size : <b>min. 2 - max. 5</b> members per team
+            <b>Team Size</b> : <b>min. 2 - max. 5</b> per team
           </p>
           <h2 className={styles.about_announce}>
             hackathon tracks will be <br /> announced soon !

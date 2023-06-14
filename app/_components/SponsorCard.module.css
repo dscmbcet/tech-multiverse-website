@@ -5,6 +5,7 @@
     max-width: fit-content;
     display: flex;
     padding: 15px 20px;
+    min-width: 200px;
 }
 
 .sponsorItem {

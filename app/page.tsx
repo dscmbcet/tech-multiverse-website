@@ -250,6 +250,42 @@ Whether you&lsquo;re a seasoned hacker or a newcomer, this hackathon is designed
                 alt="REPLIT LOGO"
               />
             </div>
+            <h2>silver</h2>
+            <div className={styles.sponsorContainer}>
+              <SponsorCard
+                imagePath="/taskade.png"
+                URL="https://www.taskade.com/"
+                alt="TASKADE LOGO"
+              />
+              <SponsorCard
+                imagePath="/voiceflow.png"
+                URL="https://www.voiceflow.com/"
+                alt="VOICEFLOW LOGO"
+              />
+              <SponsorCard
+                imagePath="/axure.svg"
+                URL="https://www.axure.com/"
+                alt="AXURE LOGO"
+              />
+              <SponsorCard
+                imagePath="/oreilly.png"
+                URL="https://www.oreilly.com/"
+                alt="OREILLY LOGO"
+              />
+              <SponsorCard
+                imagePath="/givemycertificate.png"
+                URL="https://givemycertificate.com/"
+                alt="GIVEMYCERTIFICATE LOGO"
+              />
+            </div>
+            <h2>educational partner</h2>
+            <div className={styles.sponsorContainer}>
+              <SponsorCard
+                imagePath="/interview-cake.png"
+                URL="https://www.interviewcake.com/"
+                alt="INTERVIEWCAKE LOGO"
+              />
+            </div>
           </div>
         </div>
       </section>

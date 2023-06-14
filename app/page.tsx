@@ -219,6 +219,14 @@ Whether you&lsquo;re a seasoned hacker or a newcomer, this hackathon is designed
             />
           </div>
           <div className={styles.sponsorCategory}>
+            <h2>title sponsor</h2>
+              <div className={styles.sponsorContainer}>
+                <SponsorCard
+                  imagePath="/betser-life.png"
+                  URL="https://www.betserlife.com/"
+                  alt="BETSERLIFE LOGO"
+                />
+            </div>
             <h2>platinum</h2>
             <div className={styles.sponsorContainer}>
               <SponsorCard

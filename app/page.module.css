@@ -321,7 +321,7 @@
 .about_content > p {
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 101.5%;
   letter-spacing: -0.04em;
   color: #3F3C28;
@@ -329,7 +329,7 @@
 
 .about_content > p > b {
   font-weight: 700;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 101.5%;
   letter-spacing: -0.04em;
   color: #171717;

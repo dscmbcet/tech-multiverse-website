@@ -37,7 +37,7 @@
 }
 
 .about {
-  font-size: clamp(2rem, 9vw, 5rem);
+  font-size: clamp(2rem, 6vw, 4rem);
   line-height: 90%;
   text-decoration-color: #171717;
 }
@@ -45,27 +45,27 @@
 .about-content p {
   font-style: normal;
   font-weight: 600;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 .about-content b {
   font-style: normal;
   font-weight: 600;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 101.5%;
   letter-spacing: -0.04em;
   color: #171717;
 }
 
 .technoverse {
-  font-size: clamp(2rem, 6vw, 3rem);
+  font-size: clamp(2rem, 9vw, 5rem);
   line-height: 80%;
 }
 
 .about-desc {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 2%;
 }
@@ -122,7 +122,7 @@
 .about-content-inner {
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   line-height: 101.5%;
   letter-spacing: -0.04em;
 }
@@ -131,7 +131,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 101.5%;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
   letter-spacing: -0.04em;
   color: #171717;
 }

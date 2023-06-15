@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation';
 import './NavBar.css'
-import Link from 'next/link';
+import a from 'next/link';
 
 function NavBar() {
     const router = useRouter();
@@ -33,13 +33,13 @@ function NavBar() {
                 </div>
                 <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
                     <li>
-                        <Link className='link' href='/' scroll={false}>Home</Link>
+                        <a className='link' href='/' >Home</a>
                     </li>
                     <li>
-                        <Link className='link' href='#sponsors' scroll={false}>Sponsors</Link>
+                        <a className='link' href='#sponsors' >Sponsors</a>
                     </li>
                     <li>
-                        <Link className='link' href='#register' scroll={false}>Register</Link>
+                        <a className='link' href='#register' >Register</a>
                     </li>
                     {/* <li onKeyDown={()=>executeScroll("register")} onClick={()=>executeScroll("register")}>Register</li>
                     <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li> */}

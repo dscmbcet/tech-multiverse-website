@@ -70,6 +70,10 @@
   margin-top: 2%;
 }
 
+.about-desc > div {
+  padding-right: 5%;
+}
+
 .about-desc > .player {
   display: flex;
   justify-content: center;
@@ -108,7 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 7%;
 }
 
 .about-content {

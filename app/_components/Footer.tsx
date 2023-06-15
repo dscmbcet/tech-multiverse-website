@@ -6,19 +6,6 @@ import { AiFillInstagram, AiFillMail, AiOutlineTwitter, AiFillLinkedin } from 'r
 import Link from 'next/link';
 
 function Footer() {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        
-        return () => {
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-              }
-        }
-    }, []);
   return (
     <div className='Footer' style={{backgroundColor: "#1A1A1A"}}>
         <div className='footer_register'>
@@ -26,14 +13,7 @@ function Footer() {
                 <h1>register now and</h1>
                 <h1>“do cool things that matter.”</h1>
             </div>
-            <div>
-                <div 
-                className="apply-button" 
-                data-hackathon-slug="technoverse" 
-                data-button-theme="dark"
-                style={{height: "44px", width: "312px"}}
-                />
-            </div>
+            <a href='https://technoverse.devfolio.co/' style={{height: "44px", width: "312px"}} className='register_button'>Register Now</a>
         </div>
         <div className="footer_about">
             <h3>Google Developer Student Clubs, MBCET</h3>

@@ -95,7 +95,7 @@ export default function Home() {
       {/* {(width < 1024) && <div className={styles.mobileError}>
           <h1>THIS WEBSITE IS OPTIMIZED ONLY ON DESKTOPS</h1>
       </div>} */}
-      <section className={styles.landing}>
+      <section id="home" className={styles.landing}>
         <div className={styles.overlay}>
           <div className={styles.imageoverlay}/>
         </div>

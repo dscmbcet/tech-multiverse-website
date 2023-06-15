@@ -33,7 +33,7 @@ function NavBar() {
                 </div>
                 <ul className={`${toggle?'navLinks menu active':'navLinks'}`}>
                     <li>
-                        <a className='link' href='/' >Home</a>
+                        <a className='link' href='#home' >Home</a>
                     </li>
                     <li>
                         <a className='link' href='#sponsors' >Sponsors</a>

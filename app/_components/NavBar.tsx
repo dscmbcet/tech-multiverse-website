@@ -39,7 +39,7 @@ function NavBar() {
                         <a className='link' href='#sponsors' >Sponsors</a>
                     </li>
                     <li>
-                        <a className='link' href='#register' >Register</a>
+                        <a className='link' href='https://technoverse.devfolio.co/prizes' >Register</a>
                     </li>
                     {/* <li onKeyDown={()=>executeScroll("register")} onClick={()=>executeScroll("register")}>Register</li>
                     <li onKeyDown={()=>executeScroll("sponsor")} onClick={()=>executeScroll("sponsor")}>Sponsors</li> */}
